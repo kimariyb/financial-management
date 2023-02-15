@@ -599,6 +599,34 @@ $\beta$系数是度量一项资产系统性风险的指标，不同资产的系�
 \end{equation*}
 式中，$DCL$表示总杠杆系数，其他符号含义同前。
 
+\emph{六郎公司年度销售净额为}28000\emph{万元，息税前利润}8000\emph{万元，固定成本为}3200\emph{万元，变动成本率为}60\%；\emph{资本总额为}20000\emph{万元，其中债务资本比例为}40\%\emph{，平均年利润为}8\%\emph{。分别计算三种杠杆系数。}
+
+\solve[答]：营业杠杆系数$DOL$为：
+\begin{equation*}
+	\begin{aligned}
+		DOL = \frac{EBIT+F}{EBIT} 
+		= 1+\frac{F}{EBIT} 
+		= 1+\frac{3200}{8000} 
+		= 1.4
+	\end{aligned}
+\end{equation*}
+
+财务杠杆系数$DFL$：
+\begin{equation*}
+	\begin{aligned}
+		DFL = \frac{EBIT}{EBIT-I} 
+		= \frac{8000}{8000-(20000\times 40\% \times 8\%)} 
+		= 1.09
+	\end{aligned}
+\end{equation*}
+
+总杠杆系数$DCL$：
+\begin{equation*}
+	\begin{aligned}
+		DCL &= DFL \times DOL = 1.09 \times 1.4 
+		= 1.53
+	\end{aligned}
+\end{equation*}
 \subsection{资本结构决策}
 
 \textbf{1. 每股收益分析}
@@ -647,6 +675,41 @@ $\beta$系数是度量一项资产系统性风险的指标，不同资产的系�
 	NPV = \sum_{t=0}^{n} \frac{NCF_t}{(1+K)^t}
 \end{equation*}
 
+\emph{某公司准备投资一个新的项目以扩充生产能力，预计该项目可以持续}5\emph{年，固定资产投资}750\emph{万元。固定资产采用直线法计提折旧，折旧年限为}5\emph{年，估计净残值为}50\emph{万元。预计每年的付现固定成本为}300\emph{万元，每间产品单价为}250\emph{元，年销量}30000\emph{件，均为现金交易。预计期初需要垫支产品单价为}250\emph{元。假设资本成本率为}10\%\emph{，所得税税率}为25\%\emph{，计算项目营业净现金流量和项目净现值。}
+
+\solve[答]：要计算项目营业净现金流量$NCF$，则必须先计算该项目的折旧额：
+\begin{equation*}
+	\text{折旧额} = (750-50) \div 5 = 140 \text{万元}
+\end{equation*}
+计算每年营业净现金流量$NCF$，可以使用现金流量表：
+\begin{center}
+	\begin{tabular}{ccccccc}
+		\toprule
+		\emph{项目} & 第0年 & 第1年 & 第2年 & 第3年 & 第4年 & 第5年 \\
+		\midrule
+		\emph{初始投资} & -750 & & & & & \\
+		\emph{残值} & & & & & & 50 \\
+		\emph{营运资本} & -250 & & & & & \\
+		\emph{营业收入} &  & 750 & 750 & 750 & 750 & 750 \\
+		\emph{付现成本} & & 300 & 300 & 300 & 300 & 300 \\
+		\emph{折旧} & & 140 & 140 & 140 & 140 & 140 \\
+		\emph{税前利润} & & 310 & 310 & 310 & 310 & 310 \\
+		\emph{所得税费用} & & 77.5 & 77.5 & 77.5 & 77.5 & 77.5 \\
+		\emph{税后净利} & & 232.5 & 232.5 & 232.5 & 232.5 & 232.5 \\
+		\emph{项目现金流量} & -1000  & 372.5 & 372.5 & 372.5 & 372.5 & 672.5 \\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+则净现值$NPV$为：
+\begin{equation*}
+	\begin{aligned}
+		NPV &= \sum_{n}^{t=0} \frac{NCF_t}{(1+K)^t} \\
+		&= \frac{-1000}{(1+10\%)^0} + \frac{372.5}{(1+10\%)^1} + \frac{372.5}{(1+10\%)^2} + \frac{372.5}{(1+10\%)^3} \\[1.5ex] &+  \frac{372.5}{(1+10\%)^4} +
+		\frac{672.5}{(1+10\%)^5} \\[1.5ex]
+		&= 598 \text{万元}
+	\end{aligned}
+\end{equation*}
 
 \textbf{2. 内含报酬率的计算}
 
